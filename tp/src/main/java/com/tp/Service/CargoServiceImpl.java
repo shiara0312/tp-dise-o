@@ -6,11 +6,11 @@
 package com.tp.Service;
 
 import com.tp.Entity.Cargo;
-import com.tp.Repository.ICargoRepository;
 import java.io.Serializable;
 import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Named;
+import com.tp.Repository.ICargoRepository;
 
 /**
  *

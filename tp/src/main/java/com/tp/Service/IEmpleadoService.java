@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author shiara
  */
-interface IEmpleadoService {
+public interface IEmpleadoService {
  public void saveEmpleado(Empleado emp);
     public void updateEmpleado(Empleado emp);
     public List<Empleado> getAll();

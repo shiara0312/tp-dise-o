@@ -5,7 +5,7 @@
  */
 package com.tp.Service;
 
-import com.hamp.entity.Producto;
+import com.tp.Entity.Producto;
 import java.util.List;
 
 /**

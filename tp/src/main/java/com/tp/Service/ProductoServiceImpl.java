@@ -5,7 +5,7 @@
  */
 package com.tp.Service;
 
-import com.hamp.entity.Producto;
+import com.tp.Entity.Producto;
 import com.tp.Repository.IProductoRepository;
 import java.io.Serializable;
 import java.util.List;

@@ -6,14 +6,13 @@
 package com.tp.Service;
 
 import com.tp.Entity.Cargo;
-import com.tp.Entity.Orden;
 import java.util.List;
 
 /**
  *
  * @author shiara
  */
-interface ICargoService {
+public interface ICargoService {
         public void save(Cargo c);
     public void update(Cargo c);
     public List<Cargo> findAll();

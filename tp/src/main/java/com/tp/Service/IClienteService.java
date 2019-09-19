@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author shiara
  */
-interface IClienteService {
+public interface IClienteService {
      public void saveCliente(Cliente c);
     public void updateCliente(Cliente c);
     public List<Cliente> getAll();
