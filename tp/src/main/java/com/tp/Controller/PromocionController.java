@@ -122,6 +122,7 @@ public class PromocionController implements Serializable{
         this.promocions = promocions;
     }
 
+    
     public Promocion getPromocion() {
         return promocion;
     }
