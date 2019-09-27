@@ -17,45 +17,45 @@ import javax.validation.constraints.NotNull;
  */
 
 @Embeddable
-public class DetallePK implements Serializable {
+public class PromocionDetallePK implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "idproducto")
     private int idproducto;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "idorden")
-    private int idorden;
+    @Column(name = "idpromocion")
+    private int idpromocion;
 
-    public DetallePK() {
+    public PromocionDetallePK() {
     }
 
-    public DetallePK(int idproducto, int idorden) {
+    public PromocionDetallePK(int idproducto, int idpromocion) {
         this.idproducto = idproducto;
-        this.idorden = idorden;
+        this.idpromocion = idpromocion;
     }
 
-    public int getIdProducto() {
+    public int getIdproducto() {
         return idproducto;
     }
 
-    public void setIdProducto(int idproducto) {
+    public void setIdproducto(int idproducto) {
         this.idproducto = idproducto;
     }
 
-    public int getIdOrden() {
-        return idorden;
+    public int getIdpromocion() {
+        return idpromocion;
     }
 
-    public void setIdOrden(int idorden) {
-        this.idorden = idorden;
+    public void setIdpromocion(int idpromocion) {
+        this.idpromocion = idpromocion;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
         hash += (int) idproducto;
-        hash += (int) idorden;
+        hash += (int) idpromocion;
         return hash;
     }
 
@@ -65,11 +65,11 @@ public class DetallePK implements Serializable {
         if (!(object instanceof DetallePK)) {
             return false;
         }
-        DetallePK other = (DetallePK) object;
+        PromocionDetallePK other = (PromocionDetallePK) object;
         if (this.idproducto != other.idproducto) {
             return false;
         }
-        if (this.idorden != other.idorden) {
+        if (this.idpromocion != other.idpromocion) {
             return false;
         }
         return true;
@@ -77,7 +77,7 @@ public class DetallePK implements Serializable {
 
     @Override
     public String toString() {
-        return "com.tp.Entity.DetallePK[ idproducto=" + idproducto + ", idorden=" + idorden + " ]";
+        return "com.tp.Entity.PromocionDetallePK[ idproducto=" + idproducto + ", idpromocion=" + idpromocion + " ]";
     }
     
 }
